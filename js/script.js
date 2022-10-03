@@ -8,12 +8,10 @@ PriceRange.oninput = pricing
 function pricing() {
     rangeValue.innerHTML = PriceRange.value * 10 + 'k'
     let a
-
     if (PriceRange.value >= 1 && PriceRange.value < 5) {
         a = '$' + prices[0]
     }
     else if (PriceRange.value >= 5 && PriceRange.value < 10) {
-
         a = '$' + prices[1]
     }
     else if (PriceRange.value >= 10 && PriceRange.value < 50) {
